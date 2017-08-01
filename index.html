@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type= "text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla|Concert+One" rel="stylesheet">
+  </head>
+  <body>
+    <div id="flex-container">
+      <div id="panel">
+        <h1>BuzzFeed Mapper</h1>
+        <form>
+          <div>
+            <label for="buzzFeedLink">BuzzFeed Link:</label>
+            <input type="text" id="buzzFeedLink" name="link" placeholder="https://www.buzzfeed.com/best-desserts-in-nyc">
+          </div>
+          <div>
+            <button type="submit" >Submit</button>
+          </div>
+        </form>
+        <div id="content"></div>
+      </div><div id="map"></div>
+    </div>
+    <script src="mapPlaces.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=API_KEY&libraries=places&callback=initMap" async defer></script>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-color: white;
+}
+
+h1 {
+  color: #ce5252;
+  font-family: 'Concert One', cursive;
+  font-size: 45px;
+  text-align: center;
+}
+
+label {
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  color: #267ba5;
+}
+
+button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: none;
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  background-color: #ce5252;
+  cursor: pointer;
+  font-family: 'Karla', sans-serif;
+}
+
+#flex-container {
+  display: flex;
+  height: 100%;
+}
+
+#map {
+  height: 100%;
+  width: 70%;
+  flex-grow: 3;
+  display: inline-block;
+}
+
+#panel {
+  display: inline-block;
+  height: 100%;
+  width: 30%;
+  flex-grow: 1;
+  overflow: scroll;
+}
+
+#buzzFeedLink {
+  width: 90%;
+  height: 24px;
+  font-size: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.about {
+  width: 70%;
+  vertical-align: middle;
+  font-family: 'Karla', sans-serif;
+  text-align: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.list {
+  margin: 30px 30px 30px 30px;
+}
+
+.listItem {
+  font-family: 'Karla', sans-serif;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.listLabel{
+  font-size: 20px;
+  color: #ce5252;
+  margin: 0;
+}
+
+.loader {
+  background-image: url('loader.svg');
+  height: 300px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  display: block;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "buzzfeedMapper",
+  "version": "1.0.0",
+  "description": "Transform BuzzFeed lists into maps",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cheerio": "^1.0.0-rc.2",
+    "chrome-launcher": "^0.3.2",
+    "chrome-remote-interface": "^0.24.2",
+    "express": "^4.15.3",
+    "path": "^0.12.7",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "yelp-fusion": "^1.0.3"
+  },
+  "scripts": {
+    "build": "webpack ./listExtractor.js bundle.js"
+  }
+}
