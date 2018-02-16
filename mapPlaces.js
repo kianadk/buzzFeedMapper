@@ -50,14 +50,12 @@ async function initMap() {
   headers.append("Content-Type", "application/json");
 
   var body = {data: places};
-  console.log(body);
   var info = await fetch('/yelp', {
     method: 'POST',
     headers: headers,
     body: JSON.stringify(body)
   });
   info = await info.json();
-  console.log(info);
   createMarkers(info);
 }
 
@@ -68,6 +66,10 @@ function createMarkers(places) {
   list.classList.add('list');
 
   for(var i = 0; i < places.length; i++) {
+    if (!places[i]) {
+      continue;
+    }
+
     var coords = {lat: places[i].coordinates.latitude, lng: places[i].coordinates.longitude}
 
     //set up tooltip
